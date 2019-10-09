@@ -1,0 +1,369 @@
+Statistical profiling result from isolate-0x105000000-v8.log, (4474 ticks, 10 unaccounted, 0 excluded).
+
+ [Shared libraries]:
+   ticks  total  nonlib   name
+     21    0.5%          /usr/lib/system/libsystem_platform.dylib
+      3    0.1%          /usr/lib/system/libsystem_pthread.dylib
+      1    0.0%          /usr/lib/libc++abi.dylib
+
+ [JavaScript]:
+   ticks  total  nonlib   name
+     11    0.2%    0.2%  Builtin: RegExpReplace
+     10    0.2%    0.2%  Builtin: InterpreterEntryTrampoline
+      3    0.1%    0.1%  Builtin: StringIndexOf
+      3    0.1%    0.1%  Builtin: KeyedLoadIC_Megamorphic
+      3    0.1%    0.1%  Builtin: CreateTypedArray
+      2    0.0%    0.0%  LazyCompile: ~update internal/crypto/sig.js:42:40
+      2    0.0%    0.0%  LazyCompile: ~sign /Users/rabiesulman/code/node_modules/jwa/index.js:146:22
+      2    0.0%    0.0%  LazyCompile: ~isHostObject /Users/rabiesulman/code/node_modules/lodash.isplainobject/index.js:20:22
+      2    0.0%    0.0%  LazyCompile: ~getIntOption internal/crypto/sig.js:58:22
+      2    0.0%    0.0%  LazyCompile: ~formatWithOptions util.js:173:27
+      2    0.0%    0.0%  LazyCompile: ~base64url /Users/rabiesulman/code/node_modules/jws/lib/sign-stream.js:9:19
+      2    0.0%    0.0%  LazyCompile: ~Promise.all.data.map /Users/rabiesulman/code/tet.js:10:32
+      2    0.0%    0.0%  LazyCompile: ~EventEmitter.init events.js:67:29
+      2    0.0%    0.0%  Builtin: TypedArrayInitializeWithBuffer
+      2    0.0%    0.0%  Builtin: Call_ReceiverIsAny
+      2    0.0%    0.0%  Builtin: CallFunction_ReceiverIsAny
+      2    0.0%    0.0%  Builtin: ArrayBufferConstructor
+      1    0.0%    0.0%  Stub: StringAddStub
+      1    0.0%    0.0%  Script: ~<anonymous> /Users/rabiesulman/code/node_modules/semver/semver.js:1:11
+      1    0.0%    0.0%  RegExp: ^(RS|PS|ES|HS)(256|384|512)$|^(none)$
+      1    0.0%    0.0%  LazyCompile: ~write buffer.js:897:40
+      1    0.0%    0.0%  LazyCompile: ~validateOptions /Users/rabiesulman/code/node_modules/jsonwebtoken/sign.js:57:25
+      1    0.0%    0.0%  LazyCompile: ~validate /Users/rabiesulman/code/node_modules/jsonwebtoken/sign.js:38:18
+      1    0.0%    0.0%  LazyCompile: ~toBuf internal/crypto/util.js:42:15
+      1    0.0%    0.0%  LazyCompile: ~stringSlice buffer.js:588:21
+      1    0.0%    0.0%  LazyCompile: ~sign internal/crypto/sig.js:70:36
+      1    0.0%    0.0%  LazyCompile: ~jwsSign /Users/rabiesulman/code/node_modules/jws/lib/sign-stream.js:25:17
+      1    0.0%    0.0%  LazyCompile: ~jwa /Users/rabiesulman/code/node_modules/jwa/index.js:227:30
+      1    0.0%    0.0%  LazyCompile: ~isBuffer buffer.js:428:36
+      1    0.0%    0.0%  LazyCompile: ~includes /Users/rabiesulman/code/node_modules/lodash.includes/index.js:294:18
+      1    0.0%    0.0%  LazyCompile: ~fromString buffer.js:333:20
+      1    0.0%    0.0%  LazyCompile: ~fromBase64 /Users/rabiesulman/code/node_modules/jwa/index.js:90:20
+      1    0.0%    0.0%  LazyCompile: ~format util.js:169:16
+      1    0.0%    0.0%  LazyCompile: ~checkIsPrivateKey /Users/rabiesulman/code/node_modules/jwa/index.js:48:27
+      1    0.0%    0.0%  LazyCompile: ~byteLength buffer.js:508:20
+      1    0.0%    0.0%  LazyCompile: ~WritableState _stream_writable.js:52:23
+      1    0.0%    0.0%  LazyCompile: ~Stream internal/streams/legacy.js:6:16
+      1    0.0%    0.0%  LazyCompile: ~Sign internal/crypto/sig.js:24:14
+      1    0.0%    0.0%  LazyCompile: ~<anonymous> /Users/rabiesulman/code/node_modules/jsonwebtoken/sign.js:179:52
+      1    0.0%    0.0%  LazyCompile: *update internal/crypto/sig.js:42:40
+      1    0.0%    0.0%  LazyCompile: *module.exports /Users/rabiesulman/code/node_modules/jsonwebtoken/sign.js:82:27
+      1    0.0%    0.0%  LazyCompile: *fromBase64 /Users/rabiesulman/code/node_modules/jwa/index.js:90:20
+      1    0.0%    0.0%  LazyCompile: *WritableState _stream_writable.js:52:23
+      1    0.0%    0.0%  Builtin: StringToLowerCaseIntl
+      1    0.0%    0.0%  Builtin: StringPrototypeSlice
+      1    0.0%    0.0%  Builtin: StringPrototypeReplace
+      1    0.0%    0.0%  Builtin: StoreIC
+      1    0.0%    0.0%  Builtin: RegExpMatchFast
+      1    0.0%    0.0%  Builtin: RecordWrite
+      1    0.0%    0.0%  Builtin: KeyedStoreIC_Megamorphic
+      1    0.0%    0.0%  Builtin: KeyedLoadIC_PolymorphicName
+      1    0.0%    0.0%  Builtin: FunctionPrototypeCall
+      1    0.0%    0.0%  Builtin: FastNewObject
+      1    0.0%    0.0%  Builtin: Construct {1}
+
+ [C++]:
+   ticks  total  nonlib   name
+   3389   75.7%   76.2%  T node::crypto::Sign::SignFinal(v8::FunctionCallbackInfo<v8::Value> const&)
+    129    2.9%    2.9%  t __bn_sqrx8x_reduction
+    113    2.5%    2.5%  T _task_threads
+    100    2.2%    2.2%  t mulx4x_internal
+     86    1.9%    1.9%  t _bn_sqrx8x_internal
+     37    0.8%    0.8%  T node::contextify::ContextifyScript::New(v8::FunctionCallbackInfo<v8::Value> const&)
+     36    0.8%    0.8%  T _BN_div
+     34    0.8%    0.8%  T _BN_lshift
+     29    0.6%    0.7%  T _BN_rshift
+     28    0.6%    0.6%  T _bn_mul_words
+     26    0.6%    0.6%  T _bn_correct_top
+     23    0.5%    0.5%  T _proc_name
+     19    0.4%    0.4%  t bn_mulx4x_mont
+     11    0.2%    0.2%  t __bn_postx4x_internal
+     10    0.2%    0.2%  T _bn_wexpand
+     10    0.2%    0.2%  T _BN_set_word
+      9    0.2%    0.2%  T node::crypto::Sign::SignInit(v8::FunctionCallbackInfo<v8::Value> const&)
+      8    0.2%    0.2%  t _MOD_EXP_CTIME_COPY_FROM_PREBUF
+      7    0.2%    0.2%  T _bn_sub_words
+      7    0.2%    0.2%  T _BN_num_bits_word
+      6    0.1%    0.1%  t void v8::internal::String::WriteToFlat<unsigned char>(v8::internal::String*, unsigned char*, int, int)
+      6    0.1%    0.1%  t __malloc_initialize
+      6    0.1%    0.1%  T _bn_add_words
+      6    0.1%    0.1%  T _BN_mul
+      6    0.1%    0.1%  T _BN_CTX_get
+      5    0.1%    0.1%  T void node::StreamBase::JSMethod<node::LibuvStreamWrap, &(int node::StreamBase::WriteString<(node::encoding)1>(v8::FunctionCallbackInfo<v8::Value> const&))>(v8::FunctionCallbackInfo<v8::Value> const&)
+      4    0.1%    0.1%  t node::GetBinding(v8::FunctionCallbackInfo<v8::Value> const&)
+      4    0.1%    0.1%  t bn_sqr8x_mont
+      4    0.1%    0.1%  t _tiny_malloc_should_clear
+      4    0.1%    0.1%  T node::crypto::Sign::New(v8::FunctionCallbackInfo<v8::Value> const&)
+      4    0.1%    0.1%  T _int_bn_mod_inverse
+      4    0.1%    0.1%  T _bn_mul_normal
+      4    0.1%    0.1%  T _BN_CTX_end
+      3    0.1%    0.1%  t v8::internal::Scavenger::EvacuateShortcutCandidate(v8::internal::Map*, v8::internal::HeapObject**, v8::internal::ConsString*, int)
+      3    0.1%    0.1%  t _tiny_malloc_from_free_list
+      3    0.1%    0.1%  T v8::internal::Scanner::ScanIdentifierOrKeywordInner(v8::internal::Scanner::LiteralScope*)
+      3    0.1%    0.1%  T node::TTYWrap::New(v8::FunctionCallbackInfo<v8::Value> const&)
+      3    0.1%    0.1%  T _vm_region_recurse_64
+      3    0.1%    0.1%  T __kernelrpc_mach_vm_map_trap
+      3    0.1%    0.1%  T __kernelrpc_mach_port_get_refs
+      3    0.1%    0.1%  T _OPENSSL_cleanse
+      3    0.1%    0.1%  T _EVP_DecodeUpdate
+      3    0.1%    0.1%  T _BN_num_bits
+      2    0.0%    0.0%  t v8::internal::MaybeHandle<v8::internal::Object> v8::internal::(anonymous namespace)::HandleApiCallHelper<true>(v8::internal::Isolate*, v8::internal::Handle<v8::internal::HeapObject>, v8::internal::Handle<v8::internal::HeapObject>, v8::internal::Handle<v8::internal::FunctionTemplateInfo>, v8::internal::Handle<v8::internal::Object>, v8::internal::BuiltinArguments)
+      2    0.0%    0.0%  t v8::internal::MaybeHandle<v8::internal::Object> v8::internal::(anonymous namespace)::HandleApiCallHelper<false>(v8::internal::Isolate*, v8::internal::Handle<v8::internal::HeapObject>, v8::internal::Handle<v8::internal::HeapObject>, v8::internal::Handle<v8::internal::FunctionTemplateInfo>, v8::internal::Handle<v8::internal::Object>, v8::internal::BuiltinArguments)
+      2    0.0%    0.0%  t v8::internal::LookupIterator::State v8::internal::LookupIterator::LookupInRegularHolder<false>(v8::internal::Map*, v8::internal::JSReceiver*)
+      2    0.0%    0.0%  t v8::internal::JsonStringifier::Result v8::internal::JsonStringifier::Serialize_<true>(v8::internal::Handle<v8::internal::Object>, bool, v8::internal::Handle<v8::internal::Object>)
+      2    0.0%    0.0%  t sha1_block_data_order_avx2
+      2    0.0%    0.0%  t node::Buffer::(anonymous namespace)::ByteLengthUtf8(v8::FunctionCallbackInfo<v8::Value> const&)
+      2    0.0%    0.0%  t _malloc_zone_register_while_locked
+      2    0.0%    0.0%  t _create_scalable_szone
+      2    0.0%    0.0%  T v8::internal::compiler::GraphReducer::Reduce(v8::internal::compiler::Node*)
+      2    0.0%    0.0%  T v8::internal::Heap::ReserveSpace(std::__1::vector<v8::internal::Heap::Chunk, std::__1::allocator<v8::internal::Heap::Chunk> >*, std::__1::vector<unsigned char*, std::__1::allocator<unsigned char*> >*)
+      2    0.0%    0.0%  T _thread_policy_get
+      2    0.0%    0.0%  T _getipv4sourcefilter
+      2    0.0%    0.0%  T _bn_get_bits5
+      2    0.0%    0.0%  T ___pthread_init
+      2    0.0%    0.0%  T _EVP_DecodeBlock
+      2    0.0%    0.0%  T _BN_uadd
+      2    0.0%    0.0%  T _BN_add
+      2    0.0%    0.0%  T _BN_CTX_start
+      1    0.0%    0.0%  t void v8::internal::Scanner::Advance<false, true>()
+      1    0.0%    0.0%  t void v8::internal::BodyDescriptorApply<v8::internal::CallIterateBody, void, v8::internal::Map*, v8::internal::HeapObject*, int, v8::internal::IterateAndScavengePromotedObjectsVisitor*>(v8::internal::InstanceType, v8::internal::Map*, v8::internal::HeapObject*, int, v8::internal::IterateAndScavengePromotedObjectsVisitor*)
+      1    0.0%    0.0%  t void node::Buffer::(anonymous namespace)::StringWrite<(node::encoding)4>(v8::FunctionCallbackInfo<v8::Value> const&)
+      1    0.0%    0.0%  t void node::Buffer::(anonymous namespace)::StringWrite<(node::encoding)1>(v8::FunctionCallbackInfo<v8::Value> const&)
+      1    0.0%    0.0%  t void node::Buffer::(anonymous namespace)::StringSlice<(node::encoding)2>(v8::FunctionCallbackInfo<v8::Value> const&)
+      1    0.0%    0.0%  t v8::internal::StatsCounter::Increment()
+      1    0.0%    0.0%  t v8::internal::Scavenger::ScavengeObject(v8::internal::HeapObjectReference**, v8::internal::HeapObject*)
+      1    0.0%    0.0%  t v8::internal::ParserBase<v8::internal::PreParser>::FunctionState::FunctionState(v8::internal::ParserBase<v8::internal::PreParser>::FunctionState**, v8::internal::Scope**, v8::internal::DeclarationScope*)
+      1    0.0%    0.0%  t v8::internal::ParserBase<v8::internal::Parser>::ParseMemberWithNewPrefixesExpression(bool*, bool*)
+      1    0.0%    0.0%  t v8::internal::MaybeHandle<v8::internal::JSObject> v8::internal::FixedArray::GetValue<v8::internal::JSObject>(v8::internal::Isolate*, int) const
+      1    0.0%    0.0%  t v8::internal::JsonStringifier::Result v8::internal::JsonStringifier::Serialize_<false>(v8::internal::Handle<v8::internal::Object>, bool, v8::internal::Handle<v8::internal::Object>)
+      1    0.0%    0.0%  t v8::internal::HeapObjectIterator::Next()
+      1    0.0%    0.0%  t v8::internal::FunctionCallbackArguments::Call(v8::internal::CallHandlerInfo*)
+      1    0.0%    0.0%  t v8::internal::ConsString* v8::internal::String::VisitFlat<v8::Utf8LengthHelper::Visitor>(v8::Utf8LengthHelper::Visitor*, v8::internal::String*, int)
+      1    0.0%    0.0%  t v8::internal::CodeEventDispatcher::CodeCreateEvent(v8::internal::CodeEventListener::LogEventsAndTags, v8::internal::AbstractCode*, char const*)
+      1    0.0%    0.0%  t v8::internal::Builtin_Impl_HandleApiCall(v8::internal::BuiltinArguments, v8::internal::Isolate*)
+      1    0.0%    0.0%  t v8::internal::Builtin_Impl_FunctionPrototypeToString(v8::internal::BuiltinArguments, v8::internal::Isolate*)
+      1    0.0%    0.0%  t std::__1::locale::__imp::__imp(unsigned long)
+      1    0.0%    0.0%  t std::__1::deque<v8::internal::interpreter::BytecodeRegisterOptimizer::RegisterInfo*, v8::internal::RecyclingZoneAllocator<v8::internal::interpreter::BytecodeRegisterOptimizer::RegisterInfo*> >::push_back(v8::internal::interpreter::BytecodeRegisterOptimizer::RegisterInfo* const&)
+      1    0.0%    0.0%  t std::__1::deque<v8::internal::compiler::GraphReducer::NodeState, v8::internal::RecyclingZoneAllocator<v8::internal::compiler::GraphReducer::NodeState> >::push_back(v8::internal::compiler::GraphReducer::NodeState&&)
+      1    0.0%    0.0%  t std::__1::basic_ostream<char, std::__1::char_traits<char> >& std::__1::__put_character_sequence<char, std::__1::char_traits<char> >(std::__1::basic_ostream<char, std::__1::char_traits<char> >&, char const*, unsigned long)
+      1    0.0%    0.0%  t std::__1::__hash_iterator<std::__1::__hash_node<node::Environment::CleanupHookCallback, void*>*> std::__1::__hash_table<node::Environment::CleanupHookCallback, node::Environment::CleanupHookCallback::Hash, node::Environment::CleanupHookCallback::Equal, std::__1::allocator<node::Environment::CleanupHookCallback> >::find<node::Environment::CleanupHookCallback>(node::Environment::CleanupHookCallback const&)
+      1    0.0%    0.0%  t std::__1::__deque_base<v8::internal::Map*, v8::internal::RecyclingZoneAllocator<v8::internal::Map*> >::~__deque_base()
+      1    0.0%    0.0%  t std::__1::__deque_base<v8::internal::Map*, v8::internal::RecyclingZoneAllocator<v8::internal::Map*> >::clear()
+      1    0.0%    0.0%  t node::fs::Open(v8::FunctionCallbackInfo<v8::Value> const&)
+      1    0.0%    0.0%  t node::crypto::Sign::~Sign()
+      1    0.0%    0.0%  t bn_powerx5
+      1    0.0%    0.0%  t _tiny_size
+      1    0.0%    0.0%  t _tiny_free_no_lock
+      1    0.0%    0.0%  t _small_malloc_should_clear
+      1    0.0%    0.0%  t _rand_add
+      1    0.0%    0.0%  t _mvm_allocate_pages_securely
+      1    0.0%    0.0%  t _mem_read
+      1    0.0%    0.0%  t _malloc_print_configure
+      1    0.0%    0.0%  t _free_small
+      1    0.0%    0.0%  t _err_string_data_hash
+      1    0.0%    0.0%  t _bn_free_d
+      1    0.0%    0.0%  t _asn1_item_embed_d2i
+      1    0.0%    0.0%  t __pthread_allocate
+      1    0.0%    0.0%  t ___vfprintf
+      1    0.0%    0.0%  T void v8::internal::EvacuateVisitorBase::RawMigrateObject<(v8::internal::EvacuateVisitorBase::MigrationMode)1>(v8::internal::EvacuateVisitorBase*, v8::internal::HeapObject*, v8::internal::HeapObject*, int, v8::internal::AllocationSpace)
+      1    0.0%    0.0%  T v8::internal::interpreter::BytecodeRegisterOptimizer::RegisterListFreeEvent(v8::internal::interpreter::RegisterList)
+      1    0.0%    0.0%  T v8::internal::interpreter::BytecodeRegisterOptimizer::CreateMaterializedEquivalent(v8::internal::interpreter::BytecodeRegisterOptimizer::RegisterInfo*)
+      1    0.0%    0.0%  T v8::internal::compiler::OperatorProperties::HasContextInput(v8::internal::compiler::Operator const*)
+      1    0.0%    0.0%  T v8::internal::compiler::NodeProperties::GetValueInput(v8::internal::compiler::Node*, int)
+      1    0.0%    0.0%  T v8::internal::compiler::JSIntrinsicLowering::Reduce(v8::internal::compiler::Node*)
+      1    0.0%    0.0%  T v8::internal::compiler::JSGraph::UndefinedConstant()
+      1    0.0%    0.0%  T v8::internal::compiler::JSContextSpecialization::Reduce(v8::internal::compiler::Node*)
+      1    0.0%    0.0%  T v8::internal::compiler::JSCallReducer::ReduceAsyncFunctionPromiseCreate(v8::internal::compiler::Node*)
+      1    0.0%    0.0%  T v8::internal::VariableMap::Lookup(v8::internal::AstRawString const*)
+      1    0.0%    0.0%  T v8::internal::TransitionsAccessor::GetPrototypeTransition(v8::internal::Handle<v8::internal::Object>)
+      1    0.0%    0.0%  T v8::internal::TransitionsAccessor::ExpectedTransitionKey()
+      1    0.0%    0.0%  T v8::internal::StringTable::LookupKey(v8::internal::Isolate*, v8::internal::StringTableKey*)
+      1    0.0%    0.0%  T v8::internal::String::SlowEquals(v8::internal::Handle<v8::internal::String>, v8::internal::Handle<v8::internal::String>)
+      1    0.0%    0.0%  T v8::internal::StackFrameIteratorBase::StackFrameIteratorBase(v8::internal::Isolate*, bool)
+      1    0.0%    0.0%  T v8::internal::Scavenger::ScavengePage(v8::internal::MemoryChunk*)
+      1    0.0%    0.0%  T v8::internal::Scavenger::Process(v8::internal::OneshotBarrier*)
+      1    0.0%    0.0%  T v8::internal::Runtime_ObjectHasOwnProperty(int, v8::internal::Object**, v8::internal::Isolate*)
+      1    0.0%    0.0%  T v8::internal::Operand::Operand(v8::internal::Register, int)
+      1    0.0%    0.0%  T v8::internal::MapUpdater::FindSplitMap(v8::internal::Handle<v8::internal::DescriptorArray>)
+      1    0.0%    0.0%  T v8::internal::Map::TransitionToDataProperty(v8::internal::Handle<v8::internal::Map>, v8::internal::Handle<v8::internal::Name>, v8::internal::Handle<v8::internal::Object>, v8::internal::PropertyAttributes, v8::internal::PropertyConstness, v8::internal::Object::StoreFromKeyed)
+      1    0.0%    0.0%  T v8::internal::Map::Hash()
+      1    0.0%    0.0%  T v8::internal::Logger::ApiObjectAccess(char const*, v8::internal::JSObject*)
+      1    0.0%    0.0%  T v8::internal::LargeObjectSpace::FindPage(unsigned char*)
+      1    0.0%    0.0%  T v8::internal::JsonStringifier::SerializeString(v8::internal::Handle<v8::internal::String>)
+      1    0.0%    0.0%  T v8::internal::JsonStringifier::InitializeReplacer(v8::internal::Handle<v8::internal::Object>)
+      1    0.0%    0.0%  T v8::internal::JsonParser<true>::ScanJsonString()
+      1    0.0%    0.0%  T v8::internal::JsonParser<true>::ParseJsonObject()
+      1    0.0%    0.0%  T v8::internal::JSTypedArray::GetBuffer()
+      1    0.0%    0.0%  T v8::internal::JSObject::IsUnmodifiedApiObject(v8::internal::Object**)
+      1    0.0%    0.0%  T v8::internal::JSObject::FastPropertyAt(v8::internal::Handle<v8::internal::JSObject>, v8::internal::Representation, v8::internal::FieldIndex)
+      1    0.0%    0.0%  T v8::internal::JSFunction::ToString(v8::internal::Handle<v8::internal::JSFunction>)
+      1    0.0%    0.0%  T v8::internal::Isolate::CountUsage(v8::Isolate::UseCounterFeature)
+      1    0.0%    0.0%  T v8::internal::InnerPointerToCodeCache::GetCacheEntry(unsigned char*)
+      1    0.0%    0.0%  T v8::internal::IncrementalStringBuilder::Accumulate(v8::internal::Handle<v8::internal::String>)
+      1    0.0%    0.0%  T v8::internal::IncrementalMarking::Step(unsigned long, v8::internal::IncrementalMarking::CompletionAction, v8::internal::StepOrigin, v8::internal::WorklistToProcess)
+      1    0.0%    0.0%  T v8::internal::IC::IC(v8::internal::IC::FrameDepth, v8::internal::Isolate*, v8::internal::Handle<v8::internal::FeedbackVector>, v8::internal::FeedbackSlot)
+      1    0.0%    0.0%  T v8::internal::Heap::RegisterNewArrayBuffer(v8::internal::JSArrayBuffer*)
+      1    0.0%    0.0%  T v8::internal::Heap::AllocateRawWithRetry(int, v8::internal::AllocationSpace, v8::internal::AllocationAlignment)
+      1    0.0%    0.0%  T v8::internal::HashTable<v8::internal::StringTable, v8::internal::StringTableShape>::Rehash()
+      1    0.0%    0.0%  T v8::internal::Factory::NewStringFromOneByte(v8::internal::Vector<unsigned char const>, v8::internal::PretenureFlag)
+      1    0.0%    0.0%  T v8::internal::Factory::NewConsString(v8::internal::Handle<v8::internal::String>, v8::internal::Handle<v8::internal::String>, int, bool)
+      1    0.0%    0.0%  T v8::internal::ExistingCodeLogger::LogBytecodeHandler(v8::internal::interpreter::Bytecode, v8::internal::interpreter::OperandScale, v8::internal::Code*)
+      1    0.0%    0.0%  T v8::internal::Deserializer<v8::internal::BuiltinDeserializerAllocator>::ReadData(v8::internal::MaybeObject**, v8::internal::MaybeObject**, int, unsigned char*)
+      1    0.0%    0.0%  T v8::internal::Code::CopyFrom(v8::internal::CodeDesc const&)
+      1    0.0%    0.0%  T v8::internal::Builtins::InvokeApiFunction(v8::internal::Isolate*, bool, v8::internal::Handle<v8::internal::HeapObject>, v8::internal::Handle<v8::internal::Object>, int, v8::internal::Handle<v8::internal::Object>*, v8::internal::Handle<v8::internal::HeapObject>)
+      1    0.0%    0.0%  T v8::internal::AstValueFactory::GetString(unsigned int, bool, v8::internal::Vector<unsigned char const>)
+      1    0.0%    0.0%  T v8::internal::Assembler::call(v8::internal::Label*)
+      1    0.0%    0.0%  T v8::internal::Accessors::StringLengthGetter(v8::Local<v8::Name>, v8::PropertyCallbackInfo<v8::Value> const&)
+      1    0.0%    0.0%  T std::__1::basic_streambuf<char, std::__1::char_traits<char> >::xsputn(char const*, long)
+      1    0.0%    0.0%  T node::crypto::Sign::SignUpdate(v8::FunctionCallbackInfo<v8::Value> const&)
+      1    0.0%    0.0%  T node::Cwd(v8::FunctionCallbackInfo<v8::Value> const&)
+      1    0.0%    0.0%  T _thread_self_trap
+      1    0.0%    0.0%  T _read$NOCANCEL
+      1    0.0%    0.0%  T _mach_msg
+      1    0.0%    0.0%  T _free
+      1    0.0%    0.0%  T _fgets
+      1    0.0%    0.0%  T _bn_mul_add_words
+      1    0.0%    0.0%  T _bn_init
+      1    0.0%    0.0%  T ___fread
+      1    0.0%    0.0%  T _RSA_new_method
+      1    0.0%    0.0%  T _RSA_free
+      1    0.0%    0.0%  T _PEM_bytes_read_bio
+      1    0.0%    0.0%  T _CRYPTO_free
+      1    0.0%    0.0%  T _BN_ucmp
+      1    0.0%    0.0%  T _BN_rand
+      1    0.0%    0.0%  T _BN_mod_mul_montgomery
+      1    0.0%    0.0%  T _ASN1_object_size
+
+ [Summary]:
+   ticks  total  nonlib   name
+     91    2.0%    2.0%  JavaScript
+   4348   97.2%   97.7%  C++
+     20    0.4%    0.4%  GC
+     25    0.6%          Shared libraries
+     10    0.2%          Unaccounted
+
+ [C++ entry points]:
+   ticks    cpp   total   name
+   3466   82.8%   77.5%  T v8::internal::Builtin_HandleApiCall(int, v8::internal::Object**, v8::internal::Isolate*)
+    129    3.1%    2.9%  t __bn_sqrx8x_reduction
+    100    2.4%    2.2%  t mulx4x_internal
+     86    2.1%    1.9%  t _bn_sqrx8x_internal
+     36    0.9%    0.8%  T _BN_div
+     34    0.8%    0.8%  T _BN_lshift
+     29    0.7%    0.6%  T _BN_rshift
+     28    0.7%    0.6%  T _bn_mul_words
+     26    0.6%    0.6%  T _bn_correct_top
+     19    0.5%    0.4%  t bn_mulx4x_mont
+     15    0.4%    0.3%  T v8::internal::Runtime_CompileLazy(int, v8::internal::Object**, v8::internal::Isolate*)
+     13    0.3%    0.3%  T v8::internal::Builtin_JsonStringify(int, v8::internal::Object**, v8::internal::Isolate*)
+     11    0.3%    0.2%  t __bn_postx4x_internal
+     11    0.3%    0.2%  T v8::internal::Runtime_CompileOptimized_Concurrent(int, v8::internal::Object**, v8::internal::Isolate*)
+     10    0.2%    0.2%  T _bn_wexpand
+     10    0.2%    0.2%  T _BN_set_word
+      8    0.2%    0.2%  t _MOD_EXP_CTIME_COPY_FROM_PREBUF
+      7    0.2%    0.2%  T _bn_sub_words
+      7    0.2%    0.2%  T _BN_num_bits_word
+      6    0.1%    0.1%  t __malloc_initialize
+      6    0.1%    0.1%  T v8::internal::Runtime_InterpreterDeserializeLazy(int, v8::internal::Object**, v8::internal::Isolate*)
+      6    0.1%    0.1%  T _bn_add_words
+      6    0.1%    0.1%  T _BN_mul
+      6    0.1%    0.1%  T _BN_CTX_get
+      5    0.1%    0.1%  T v8::internal::Runtime_LoadIC_Miss(int, v8::internal::Object**, v8::internal::Isolate*)
+      4    0.1%    0.1%  t bn_sqr8x_mont
+      4    0.1%    0.1%  T v8::internal::Runtime_StringEqual(int, v8::internal::Object**, v8::internal::Isolate*)
+      4    0.1%    0.1%  T v8::internal::Runtime_DeserializeLazy(int, v8::internal::Object**, v8::internal::Isolate*)
+      4    0.1%    0.1%  T v8::internal::Builtin_JsonParse(int, v8::internal::Object**, v8::internal::Isolate*)
+      4    0.1%    0.1%  T v8::internal::Builtin_FunctionPrototypeToString(int, v8::internal::Object**, v8::internal::Isolate*)
+      4    0.1%    0.1%  T _int_bn_mod_inverse
+      4    0.1%    0.1%  T _bn_mul_normal
+      4    0.1%    0.1%  T _BN_CTX_end
+      3    0.1%    0.1%  t _tiny_malloc_should_clear
+      3    0.1%    0.1%  t _tiny_malloc_from_free_list
+      3    0.1%    0.1%  T v8::internal::Runtime_StringIndexOfUnchecked(int, v8::internal::Object**, v8::internal::Isolate*)
+      3    0.1%    0.1%  T v8::internal::Runtime_StoreIC_Miss(int, v8::internal::Object**, v8::internal::Isolate*)
+      3    0.1%    0.1%  T _OPENSSL_cleanse
+      3    0.1%    0.1%  T _EVP_DecodeUpdate
+      3    0.1%    0.1%  T _BN_num_bits
+      2    0.0%    0.0%  t sha1_block_data_order_avx2
+      2    0.0%    0.0%  t _malloc_zone_register_while_locked
+      2    0.0%    0.0%  t _create_scalable_szone
+      2    0.0%    0.0%  T _bn_get_bits5
+      2    0.0%    0.0%  T _EVP_DecodeBlock
+      2    0.0%    0.0%  T _BN_uadd
+      2    0.0%    0.0%  T _BN_add
+      2    0.0%    0.0%  T _BN_CTX_start
+      1    0.0%    0.0%  t void v8::internal::String::WriteToFlat<unsigned char>(v8::internal::String*, unsigned char*, int, int)
+      1    0.0%    0.0%  t void node::Buffer::(anonymous namespace)::StringWrite<(node::encoding)4>(v8::FunctionCallbackInfo<v8::Value> const&)
+      1    0.0%    0.0%  t v8::internal::ConsString* v8::internal::String::VisitFlat<v8::Utf8LengthHelper::Visitor>(v8::Utf8LengthHelper::Visitor*, v8::internal::String*, int)
+      1    0.0%    0.0%  t bn_powerx5
+      1    0.0%    0.0%  t _tiny_free_no_lock
+      1    0.0%    0.0%  t _rand_add
+      1    0.0%    0.0%  t _mvm_allocate_pages_securely
+      1    0.0%    0.0%  t _mem_read
+      1    0.0%    0.0%  t _malloc_print_configure
+      1    0.0%    0.0%  t _free_small
+      1    0.0%    0.0%  t _bn_free_d
+      1    0.0%    0.0%  t _asn1_item_embed_d2i
+      1    0.0%    0.0%  t __pthread_allocate
+      1    0.0%    0.0%  T v8::internal::TransitionsAccessor::GetPrototypeTransition(v8::internal::Handle<v8::internal::Object>)
+      1    0.0%    0.0%  T v8::internal::Runtime_StringReplaceNonGlobalRegExpWithFunction(int, v8::internal::Object**, v8::internal::Isolate*)
+      1    0.0%    0.0%  T v8::internal::Runtime_StackGuard(int, v8::internal::Object**, v8::internal::Isolate*)
+      1    0.0%    0.0%  T v8::internal::Runtime_SetProperty(int, v8::internal::Object**, v8::internal::Isolate*)
+      1    0.0%    0.0%  T v8::internal::Runtime_ObjectHasOwnProperty(int, v8::internal::Object**, v8::internal::Isolate*)
+      1    0.0%    0.0%  T v8::internal::Runtime_NewObject(int, v8::internal::Object**, v8::internal::Isolate*)
+      1    0.0%    0.0%  T v8::internal::Runtime_KeyedGetProperty(int, v8::internal::Object**, v8::internal::Isolate*)
+      1    0.0%    0.0%  T v8::internal::Runtime_DeleteProperty(int, v8::internal::Object**, v8::internal::Isolate*)
+      1    0.0%    0.0%  T v8::internal::JSTypedArray::GetBuffer()
+      1    0.0%    0.0%  T v8::internal::Heap::RegisterNewArrayBuffer(v8::internal::JSArrayBuffer*)
+      1    0.0%    0.0%  T v8::internal::Factory::NewStringFromOneByte(v8::internal::Vector<unsigned char const>, v8::internal::PretenureFlag)
+      1    0.0%    0.0%  T v8::internal::Builtin_ObjectAssign(int, v8::internal::Object**, v8::internal::Isolate*)
+      1    0.0%    0.0%  T _free
+      1    0.0%    0.0%  T _bn_mul_add_words
+      1    0.0%    0.0%  T _bn_init
+      1    0.0%    0.0%  T _RSA_new_method
+      1    0.0%    0.0%  T _RSA_free
+      1    0.0%    0.0%  T _PEM_bytes_read_bio
+      1    0.0%    0.0%  T _CRYPTO_free
+      1    0.0%    0.0%  T _BN_ucmp
+      1    0.0%    0.0%  T _BN_rand
+      1    0.0%    0.0%  T _BN_mod_mul_montgomery
+      1    0.0%    0.0%  T _ASN1_object_size
+
+ [Bottom up (heavy) profile]:
+  Note: percentage shows a share of a particular caller in the total
+  amount of its parent calls.
+  Callers occupying less than 1.0% are not shown.
+
+   ticks parent  name
+   3389   75.7%  T node::crypto::Sign::SignFinal(v8::FunctionCallbackInfo<v8::Value> const&)
+   3389  100.0%    T v8::internal::Builtin_HandleApiCall(int, v8::internal::Object**, v8::internal::Isolate*)
+   3389  100.0%      LazyCompile: ~sign internal/crypto/sig.js:70:36
+   3389  100.0%        LazyCompile: ~sign /Users/rabiesulman/code/node_modules/jwa/index.js:146:22
+   3389  100.0%          LazyCompile: ~jwsSign /Users/rabiesulman/code/node_modules/jws/lib/sign-stream.js:25:17
+   2356   69.5%            LazyCompile: *module.exports /Users/rabiesulman/code/node_modules/jsonwebtoken/sign.js:82:27
+   1033   30.5%            LazyCompile: ~module.exports /Users/rabiesulman/code/node_modules/jsonwebtoken/sign.js:82:27
+
+    129    2.9%  t __bn_sqrx8x_reduction
+    129  100.0%    LazyCompile: *sign internal/crypto/sig.js:70:36
+    129  100.0%      LazyCompile: ~sign /Users/rabiesulman/code/node_modules/jwa/index.js:146:22
+    129  100.0%        LazyCompile: ~jwsSign /Users/rabiesulman/code/node_modules/jws/lib/sign-stream.js:25:17
+    129  100.0%          LazyCompile: *module.exports /Users/rabiesulman/code/node_modules/jsonwebtoken/sign.js:82:27
+    129  100.0%            LazyCompile: *Promise.all.data.map /Users/rabiesulman/code/tet.js:10:32
+
+    113    2.5%  T _task_threads
+
+    100    2.2%  t mulx4x_internal
+    100  100.0%    LazyCompile: *sign internal/crypto/sig.js:70:36
+    100  100.0%      LazyCompile: ~sign /Users/rabiesulman/code/node_modules/jwa/index.js:146:22
+    100  100.0%        LazyCompile: ~jwsSign /Users/rabiesulman/code/node_modules/jws/lib/sign-stream.js:25:17
+    100  100.0%          LazyCompile: *module.exports /Users/rabiesulman/code/node_modules/jsonwebtoken/sign.js:82:27
+    100  100.0%            LazyCompile: *Promise.all.data.map /Users/rabiesulman/code/tet.js:10:32
+
+     86    1.9%  t _bn_sqrx8x_internal
+     86  100.0%    LazyCompile: *sign internal/crypto/sig.js:70:36
+     86  100.0%      LazyCompile: ~sign /Users/rabiesulman/code/node_modules/jwa/index.js:146:22
+     86  100.0%        LazyCompile: ~jwsSign /Users/rabiesulman/code/node_modules/jws/lib/sign-stream.js:25:17
+     86  100.0%          LazyCompile: *module.exports /Users/rabiesulman/code/node_modules/jsonwebtoken/sign.js:82:27
+     86  100.0%            LazyCompile: *Promise.all.data.map /Users/rabiesulman/code/tet.js:10:32
+
