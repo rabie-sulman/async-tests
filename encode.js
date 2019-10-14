@@ -1,6 +1,6 @@
 'use strict';
 const fs = require('fs');
-const jwt = require('jsonwebtoken');
+const jwt = require('jwt-simple');
 var privateKEY  = fs.readFileSync('./private.key', 'utf8');
 var publicKEY  = fs.readFileSync('./public.key', 'utf8');
 
@@ -14,9 +14,22 @@ async function signKeys(data, callback) {
 }
 
 function processItem(item) {
-    var token = jwt.sign(item, privateKEY,  { algorithm: 'RS256'});
-    return token;
+  let secret = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789';
+  let token = jwt.encode(item, secret);
+  return token;
 }
 
 // console.log(data);
-signKeys(data, function (result){console.log(JSON.stringify(result, null, 2))});
+signKeys(data, function (result){
+  const fs = require('fs');
+
+  fs.writeFile("result.json",JSON.stringify(result), function(err) {
+
+    if(err) {
+        return console.log(err);
+    }
+
+    console.log("The file was saved!");
+}); 
+
+});
