@@ -6,12 +6,12 @@
 ### php
 
 > cd php_example
-composer install
+> composer install
 
 ### node
 
 > cd node_example
-npm install
+> npm install
 
   
 
@@ -20,9 +20,9 @@ npm install
 ### node
 
 >node node_example/encode.js
-node node_example/verify.js
+>node node_example/verify.js
 
 ### php
 
 >php php_example/encode.php
-php php_example/verify.php
+>php php_example/verify.php
