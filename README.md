@@ -5,24 +5,31 @@
 
 ### php
 
+```console
 > cd php_example
 > composer install
+```
 
 ### node
 
+```console
 > cd node_example
 > npm install
-
+```
   
 
 ## test
 
 ### node
 
->node node_example/encode.js
->node node_example/verify.js
+```console
+> node node_example/encode.js
+> node node_example/verify.js
+```
 
 ### php
 
->php php_example/encode.php
->php php_example/verify.php
+```console
+> php php_example/encode.php
+> php php_example/verify.php
+```
