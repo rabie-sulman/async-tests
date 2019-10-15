@@ -1,0 +1,12 @@
+{
+    "name": "rabie/php_client",
+    "authors": [
+        {
+            "name": "Rabie Sulman",
+            "email": "rsulman@encore.co.uk"
+        }
+    ],
+    "require": {
+        "firebase/php-jwt": "^5.0"
+    }
+}
