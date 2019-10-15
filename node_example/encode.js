@@ -1,9 +1,9 @@
 'use strict';
 const fs = require('fs');
 const jwt = require('jwt-simple');
-const secret = require('../data/key.json').key;
+const secret = require(__dirname + '/../data/key.json').key;
 
-let data = require('../data/data.json');
+let data = require(__dirname + '/../data/data.json');
 
 async function signKeys(data, callback) {
     await Promise.all(data.map(async item => {
@@ -18,7 +18,7 @@ function processItem(item) {
 }
 
 signKeys(data, function (result){
-  fs.writeFile("../data/node/result.json",JSON.stringify(result), function(err) {
+  fs.writeFile(__dirname + "/../data/node/result.json",JSON.stringify(result), function(err) {
       if(err) {return console.log(err);}
     console.log("The file was saved!");
   }); 
